@@ -1,6 +1,5 @@
-Once upon a time, there was a <adjective> <noun> named <name>. 
-<name> lived in a <adjective> <noun> alone.
-One day, <name> went on an adventure to find the <adjective> <noun>. 
-Along the way, <name> met a <adjective> <noun> and a <adjective> <noun>.
-<Name> and their new friends had many <adjective> adventures. 
-In the end, <name> found the <adjective> <noun> and saved the day.
+Once upon a time in a <place>, there was a <adjective> <animal> named <name>.
+One day, <name> went on an adventure to find a magical <object>. 
+Along the way, <name> met a <animal2> and a <animal3>.
+<name> and their new friends had many adventures that day. 
+In the end, <name> found the <object> and saved the day with his/her new friends.
