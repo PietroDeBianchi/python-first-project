@@ -2,6 +2,8 @@
 import random
 
 # Define a function called `roll()`
+
+
 def roll():
     # Define the minimum and maximum values for the dice roll
     min_value = 1
@@ -14,8 +16,13 @@ def roll():
     return roll
 
 
-# Define a variable called `value` and store the output of the `roll()` function
-value = roll()
-
-# Print the value of the `value` variable
-print(value)
+while True:
+    players = input("enter the number of players (2-4): ")
+    if players.isdigit():
+        players = int(players)
+        if 1 < players <= 4:
+            print("players choosen correctly")
+            break
+        else:
+            print("invalid players number must be between 2 - 4")
+print(players)
