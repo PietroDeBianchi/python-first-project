@@ -32,5 +32,29 @@ while True:
     # If the conversion to an integer fails, print an error message
     except ValueError:
         print("Invalid, must be a number")
-# Print the number of players
-print(players)
+
+max_score = 50
+player_score = [0 for _ in range(players)]
+
+while max(player_score) <= max_score:
+
+    for players_inx in range(players):
+        current_score = 0
+
+        while True:
+            should_roll = input("Would you roll the dice? (y)")
+            if should_roll.lower() != "y":
+                break
+            value = roll()
+            if value == 1:
+                print("You've done 1, pass your turn")
+                current_score == 0
+                break
+            else:
+                current_score += value
+                print("You've scored", value)
+
+            print("Your score is:", current_score)
+
+        player_score[players_inx] += current_score
+        print("Your total score is:", player_score[players_inx])
