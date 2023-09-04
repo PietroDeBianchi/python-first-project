@@ -16,13 +16,21 @@ def roll():
     return roll
 
 
+# This code gets the number of players from the user
 while True:
+    # Get the number of players from the user
     players = input("enter the number of players (2-4): ")
-    if players.isdigit():
+    # Try to convert the number of players to an integer
+    try:
         players = int(players)
+        # If the number of players is between 2 and 4, break out of the loop
         if 1 < players <= 4:
-            print("players choosen correctly")
             break
+        # Otherwise, print an error message
         else:
             print("invalid players number must be between 2 - 4")
+    # If the conversion to an integer fails, print an error message
+    except ValueError:
+        print("Invalid, must be a number")
+# Print the number of players
 print(players)
