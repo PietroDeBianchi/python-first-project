@@ -1,6 +1,8 @@
 # This line of code opens the file `story.txt` and reads its contents into the variable `story`.
 # ...the `with` statement ensures that the file is closed properly after it is read.
+# The " as f " clause assigns the file object to the variable f.
 with open("story.txt", "r") as f:
+    # The read() method reads the contents of a file and returns it as a string.
     story = f.read()
     words = []  # This list will store the words in the story.
     start_word = -1  # Keeps track of the start index of the current word.
@@ -17,6 +19,3 @@ with open("story.txt", "r") as f:
             words.append(word)  # Add the word to the list `words`.
             # Set `start_word` to -1 to indicate that we are no longer at the start of a word.
             start_word = -1
-
-
-print(words)
