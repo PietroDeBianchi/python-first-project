@@ -64,7 +64,10 @@ while True:
                 print("You rolled a 1! Turn done!")
                 current_score = 0
                 break
-
+            # If the current score is greater than 50, the player's turn is over
+            elif current_score > 50:
+                print("You over scored! Turn done!")
+                current_score = 0
             # Otherwise, add the value to the player's current score
             else:
                 current_score += value
