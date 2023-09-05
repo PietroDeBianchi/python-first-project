@@ -63,3 +63,15 @@ def main():
         else:
             # This code prints a message if the user enters an invalid choice.
             print("Invalid choice try again")
+
+
+# This line of code checks if the current module is being executed directly.
+if __name__ == "__main__":
+    # If the current module is being executed directly, then the `main()` function is executed.
+    main()
+
+
+# The __name__ variable is a special variable in Python that stores the name of the current module.
+# The __main__ string is the name of the module that is being executed directly.
+# So, the expression __name__ == "__main__" evaluates to True if the current module is being executed directly.
+# (Python interpreter is loading and executing the module from directly from computer's hard drive)
